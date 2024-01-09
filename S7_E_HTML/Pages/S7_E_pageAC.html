@@ -1,0 +1,116 @@
+
+<html>
+<head>
+	<title>SI-S7-TP</title>
+	<link rel="stylesheet" href="../SI_Style.css" />
+</head>
+
+<body>
+	<a name="haut"></a>
+<h1>S.I. - S7 - COMMUNIQUER TRAITER - <strong>AC</strong></h1><br>
+<div id="Bande-BasPage" >Page optimisée pour Firefox -------------------------------- AC@NDSF</div>
+<div id="menu">
+	<p></p>
+	<img align="right" src="../Images/Teams Image TD SI.JPG">
+	<h2 align="middle">Séquence 7</h2>
+	<ul>
+		<li><a href="../S7_E_index.html">Accueil</a></li>
+		<li><a href="../Pages/S7_E_pageAC.html">Groupe AC</a></li>
+		<li><a href="../Pages/S7_E_pageG1.html">Groupe 1</a></li>
+		<li><a href="../Pages/S7_E_pageG2.html">Groupe 2</a></li>
+		<li><a href="../Pages/S7_E_pageG3.html">Groupe 3</a></li>
+		<li><a href="../Pages/S7_E_pageG4.html">Groupe 4</a></li>
+		<li><a href="../Pages/S7_E_pageG5.html">Groupe 5</a></li>
+		<li><a href="../Pages/S7_E_pageG6.html">Groupe 6</a></li>
+		
+	</ul>
+</div>
+
+<div id="page">
+	<font size="4" color="grey">
+	<p align="justify"><i>Le code HTML de cette page vous est fourni. Inspirez-vous de sa structure et des fonctions utilisées pour élaborer votre page. Un logiciel approprié à la programmation HTML est à votre disposition.</i></p>
+</font>
+	<h2>Sommaire</h2>
+	<font size="4" color="black">
+		<ol>
+			<li><a href="#A1">La fonction "TRAITER";</a></li>
+			<li><a href="#A2">Les supports techniques;</a></li>
+			<li><a href="#A3">La structure d'un système programmable;</a></li>
+		</ol>
+	</font>
+<hr>
+<section id="A1">
+	<h2>La fonction "TRAITER"</h2>
+	<font size="4" color="black">
+		<p align="justify">Dans la chaine d’information (en orange ci-dessous), la fonction «Traiter» reçoit des signaux en provenance de la fonction « Acquérir ». Ces signaux, mis en forme ou non, sont issus de capteurs externes ou internes au système. Le traitement permettra l’analyse des informations, leur structuration et leur transmission vers la fonction « Communiquer ».</p>
+		<p align="middle"><img src="../Images/P_AC-1.png" alt="Chaine d'informations"></p>
+		<h3>Capsule vidéo</h3>
+		<p align="middle"><iframe width="560" height="315" src="https://www.youtube.com/embed/uBcx25yGnKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+	</font>
+		<font size="4" color="grey">
+		<p align="middle"><i>Pour ajouter une vidéo à la page, lors du visionnage, sélectionner [partager], [intégrer], puis copier le code HTML et l'insérer dans votre page.</i></p>
+	</font>
+		<a href="#haut">Retour en haut de la page</a>
+</section><hr><br>
+
+<section id="A2">
+	<h2>Les supports techniques</h2>
+	<p align="middle"><img src="../Images/P_AC-2.png" alt="Systèmes techniques"></p>
+	<h3>Les supports techniques câblés</h3>
+	<font size="4" color="black">
+		<p align="justify">Les solutions câblées sont souvent anciennes mais elles présentent l’avantage d’être robustes et ne nécessitent pas de compétence de programmation. Elles consistent à réaliser un circuit (électrique, pneumatique, hydraulique) spécifique à l’application. Il est difficile de modifier le comportement du système une fois qu’il a été élaboré. Certains composants restent paramétrables (régulateur de vitesse, temporisations, etc.).</p>
+	</font>
+	<h3>Les supports techniques programmés</h3>
+	<font size="4" color="black">
+		<p align="justify">Le comportement du système est régi par un programme qui nécessite une connaissance du langage utilisé. Il existe plusieurs technologies :</p>
+		<ul>
+			<li><strong>Les Automate Programmable Industriel (API)</strong> utilisés dans les applications industrielles sur des machines automatisées et des systèmes ne nécessitant pas de programmation complexe.</li>
+	</font>
+		<font size="4" color="grey">
+			<p align="middle"><i>Pour ajouter une ressource que vous avez trouvée, copier son URL dans votre code HTML. Vous pourrez ainsi l'ouvrir dans un nouvel onglet.</i></p>
+	<a href="https://www.technologuepro.com/cours-automatismes-industriels/chapitre-1-les-automates-programmables-industriels.pdf" target=_blank>Document de cours sur les API</a><br></li>
+	</font>
+	<font size="4" color="black">
+			<li><strong>Les microcontrôleurs et micro-ordinateurs</strong> sont quant à eux plus performants et permettent un nombre de calculs plus important. Ils sont très présents dans les systèmes industriels de grande diffusion. C’est aussi un des moyens utilisés pour prototyper une solution avant son industrialisation. (ARDUINO, RaspberryPi).</li>
+		</ul>
+	</font>
+	
+
+		<a href="#haut">Retour en haut de la page</a>
+</section><hr><br>
+
+<section id="A3">
+	<h2>La structure d'un système programmable</h2>
+	<p align="middle"><img src="../Images/P_AC-3.png" alt="Systèmes programmables"></p>
+	<h3>Architecture basée sur un microcontrôleur</h3>
+	<img align="right" src="../Images/P_AC-4.png" alt="Carte ARDUINO">
+	<font size="4" color="black">
+		<p align="justify">Un microcontrôleur est un composant électronique (circuit intégré) qui regroupe toutes les fonctions d’un système minimal (Processeur, RAM, ROM, et périphériques d’entrée sortie).  Il effectue les opérations élémentaires qui ont été structurées dans le code représentant la suite logique des actions que doit mener le système (Programme = code machine). Le code est stocké dans la mémoire morte. La communication avec l’extérieur s’effectue par les bus d’entrée et de sortie. D’autres bus sont disponibles en fonction des applications souhaitées. Les bus transportent l’information. Une mémoire se comporte comme un meuble à tiroir : les informations stockées dans la mémoire sont appelées « données », et chaque tiroir possède une « adresse ».</p>
+	</font>
+	<br><br><br>
+	<h3>Architecture basée sur un système microprocesseur</h3>
+	<img align="right" src="../Images/P_AC-5.png" alt="Carte Microcontroleur">
+	<font size="4" color="black">
+		<p align="justify">Un soc (System on chip) contient généralement un processeur assez puissant tournant à plusieurs centaines de mégahertz et reposant sur plusieurs dizaines voire centaines de mégaoctets de mémoire vive. Cette technologie est plus consommatrice d’énergie, mais est plus riche et plus puissante que les technologies basées sur microcontrôleur.</p>
+	</font>
+	<br><br><br>
+	<h3>Vocabulaire</h3>
+		<font size="4" color="black">
+		<p align="justify"><strong>La mémoire morte (R.O.M)</strong> : Les données contenues dans la R.O.M (Read Only Memory) ne peuvent être effacées ni lors du fonctionnement du système, ni lorsqu’il est mis hors tension. Elle est utilisée pour stocker le code qui sera exécuté par le microprocesseur.</p>
+		<p align="justify"><strong>La mémoire vive (R.A.M)</strong> : Les données contenues dans la R.A.M (Ramdom Acces Memory) sont perdues lorsqu’elle est mise hors tension. Le microprocesseur utilise cette mémoire lors de l’exécution du programme.</p>
+		<p align="justify"><strong>Les bus analogiques </strong> : Ils permettent au système de traduire une grandeur électrique qui représente une grandeur physique. Le système dispose de convertisseurs analogiques numériques (CAN) qui convertissent la grandeur analogique en grandeur logique. En sortie il est possible de convertir le signal numérique en signal analogique par l’intermédiaire de convertisseurs numériques analogiques (CNA).</p>
+		<p align="justify"><strong>Les bus logiques </strong> : Ils fonctionnent en tout ou rien (TOR). Une entrée ou une sortie logique peut prendre deux valeurs : 0 ou 1, qui correspondent généralement aux tensions 0V et 5V.</p>
+		<br>
+	</font>
+	<h3>Exemple de la carte UNO ARDUINO</h3>
+	<p align="middle"><img src="../Images/P_AC-6.png" alt="Carte UNO ARDUINO"></p>
+<a href="#haut">Retour en haut de la page</a>
+</section><hr><br>
+
+     		 	
+
+
+
+</div>
+</body>
+</html>
