@@ -4,6 +4,7 @@
 	<title>SI-S7-TP</title>
 	<link rel="stylesheet" href="../SI_Style.css" />
 	<link rel="stylesheet" href="../minimal-table.css" />
+	
 </head>
 
 <body>
@@ -28,6 +29,7 @@
 </div>
 
 <div id="page">
+
 	</font>
 	<h2>Sommaire</h2>
 	<font size="4" color="black">
@@ -67,13 +69,84 @@
 	    <td>255</td>
 	    <td>
 	</table>
+	<p align="justify">Exemple de définition de variable</p>
+	<code>//En python<br /><br />
+		n=int(6)
+		<br /><br />
+		//En c et c++<br /><br />
+		int main()<br />{<br />
+		int n = 5;<br />
+		return 0;<br />
+	}<br />
+	</code>
 	</li>
 	<li><h4>Les flotant</h4>
-	<p align="justify">Les flottants eux, correspondent aux nombres à virgule</p>
-	<code>eee</code>
+	<p align="justify">Les flottants eux, correspondent aux nombres à virgule. Ils sont généralement encodé dans la mémoire suivant un exposant (10,10²,e7,ect...) et un entier.</p>
+	<table>
+		<tr>
+			<td>Nombre à virgule</td>
+			<td>Nombre en écriture scientifique</td>
+		</tr>
+		<tr>
+			<td>0.005</td>
+			<td>5e-3</td>
+		</tr>
+		<tr>
+			<td>4000000000</td>
+			<td>4e9</td>
+		</tr>
+	</table>
+	<p align="justify">Exemple de définition de variable</p>
+	<code>//En python<br /><br />
+		n=float(1.323219)
+		<br /><br />
+		//En c et c++<br /><br />
+		int main()<br />{<br />
+		float n = 1.323219f;<br />
+		return 0;<br />
+	}<br />
+	</code>
+	</li>
+	<li>
+	<h4>Les booléans</h4>
+	<p align="justify">Les booléans font partie des mathématiques booléans. Leurs but est de représenter des états binaires (oui/non,vrai/faux,1/0) pour pouvoir réaliser des opérations liées à l'algorithmie. Dans la mémoire, ils correspondent généralement à un espace vide(faux) et a un espace rempli (vrai).</p>
+	<code>//En python<br /><br />
+		n=True
+		<br /><br />
+		//En c il n'y a pas de valeur "bool", soit c'est 0 (faux), soit c'est un nombre quelquonque (vraie)<br /><br />
+		int main()<br />{<br />
+		int n = 1;<br />
+		return 0;<br />
+	}<br />
+		//En c++, il y une valeur booléan mais le fonctionnement est le même<br />
+		int main()<br />{<br />
+		bool n = true;<br />
+		return 0;<br />
+	}<br />
+	</code>
+	</li>
+	<li>
+	<h4>Les caractères</h4>
+
 	</li>
 	</ul>
-	
+	<p align="justify">Les caractères sont pour faire simple les lettres et elles vont composer les chaînes de caractères qui seront vu plutard. Dans la mémoire, on assigne à chaque lettre un nombre allant de 0 à 255 : c'est le code ASCII (code standard américain pour l'échange d'information).</p>
+
+	<table id="A_TABLE">
+		<tr>
+			<td>Nombre</td>
+			<td>Lettre</td>
+
+			<td>Nombre</td>
+			<td>Lettre</td>
+
+			<td>Nombre</td>
+			<td>Lettre</td>
+
+			<td>Nombre</td>
+			<td>Lettre</td>
+		</tr>
+	</table>
 	<font size="4" color="black">
 		<p align="justify"></p>
 	</font>
@@ -81,5 +154,33 @@
 </section>
 <hr><br>
 </div>
+<script type="text/javascript">
+	n = 128;
+	listL = ["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",
+			 "ESPACE","!","''","#","$","%","&","'","(",")","*","+","","","","","","","","","","","","","","","","","","","","",];
+	const parent = document.getElementById("A_TABLE");
+
+	for (let i = 0; i < n/4; ++i) {
+		const l = document.createElement("tr");
+		for (var j = 0; j < 4; ++j) {
+			const c = document.createElement("td");
+			const text = document.createTextNode(i+j*n/4);
+			c.appendChild(text);
+			l.appendChild(c);
+			const cB = document.createElement("td");
+			const textB = document.createTextNode(listL[i+j*n/4]);
+			cB.appendChild(textB);
+			l.appendChild(cB);
+		}
+		parent.appendChild(l);
+	}
+
+	const l = document.createElement("p");
+	const node = document.createTextNode("fzerfgdytfdrgzfghrtgfhyt");
+	l.appendChild(node);
+	
+
+	
+</script>
 </body>
 </html>
