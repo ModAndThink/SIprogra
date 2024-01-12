@@ -128,7 +128,7 @@
 	</li>
 	<li>
 	<h4>Les caract�res</h4>
-	<p align="justify">Les caract�res sont pour faire simple les lettres et elles vont composer les cha�nes de caract�res qui seront vu plutard. Dans la m�moire, on assigne � chaque lettre un nombre allant de 0 � 255 (soit 1 octet) : c'est le code ASCII (code standard am�ricain pour l'�change d'information).</p>
+	<p align="justify">Les caract�res sont pour faire simple les lettres et elles vont composer les cha�nes de caract�res qui seront vu plutard. Dans la m�moire, on assigne � chaque lettre un nombre allant de 0 � 255 (soit 1 octet) : c'est le code ASCII (code standard am�ricain pour l'�change d'information) qui deviendra l'UNICODE.</p>
 
 	<table id="A_TABLE">
 		<tr>
@@ -161,6 +161,7 @@
 	<li>
 	<h4>Les chaînes de caract�res</h4>
 	<p align="justify">Les chaînes de caract�res correspondent � du text. Dans la mémoire, une chaînes de caract�res correspond � une suite de caract�res donc d'octet.</p>
+	<h6>Les valeurs sont en hexadécimal</h6>
 	<table>
 		<tr>
 			<td>adresse</td>
@@ -168,10 +169,52 @@
 			<td>text</td>
 		</tr>
 		<tr>
-			<td>0x00</td>
-			<td></td>
+			<td>00</td>
+			<td align="justify">43 65 63 69&emsp;20 65 73 74 &emsp; 20 75 6e 20&emsp;6d 65 73 73</td>
+			<td align="justify">Ceci est un mess</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td align="justify">61 67 65 20&emsp;73 75 72 20 &emsp; 6c 61 20 6d &emsp;65 6d 6f 69 </td>
+			<td align="justify">age sur la memoi</td>
+		</tr>
+		<tr>
+			<td>20</td>
+			<td align="justify">72 65 2e 00&emsp;00 00 00 00 &emsp; 00 00 00 00&emsp;00 00 00 00</td>
+			<td align="justify">re. &emsp;&emsp;&emsp; &emsp;&emsp; &emsp;</td>
 		</tr>
 	</table>
+	<code>//En python<br /><br />
+		texte="Ceci est un message dans la memoire"
+		<br /><br />
+		//En c les chaînes de caract�res sont des listes (voir dessous), il faut donc déclarer une liste de caract�res<br /><br />
+		int main()<br />{<br />
+		char[35] texte="Ceci est un message dans la memoire";<br />
+		return 0;<br />
+	}<br />
+		//En c++, il faut utilis�e la librairie donnée par défaut "string"<br />
+		#include &lt;string><br /><br />
+		int main()<br />{<br />
+		string texte="Ceci est un message dans la memoire";<br />
+		return 0;<br />
+	}<br />
+	</code>
+	</li>
+	<li>
+	<h4>Les listes</h4>
+	<p align="justify">Les listes consistent donc en une liste de valeur, c'est-à-dire, une suite : de caract�res, d'entiers, de flottants ou de bool�ans. Elles sont important pour enregistrer des mesures, des résultats pour les réutiliser.</p>
+	<code>
+		//En python<br />
+		liste = [1,2,3,True,"Bonjour",[3,2,0.2313]]<br />
+		print(liste[4]) //renvoie Bonjour<br /><br />
+		//En c et c++, iostream permet d'imprimer des valeurs à la console. Une liste peut contenir qu'un seul type de valeur.<br />
+		#include &lt;iostream><br /><br />
+		int main()<br />{<br />
+		int[4] liste = [1,2,3,4];<br />
+		printf(liste[3]); //renvoie 4<br />
+		return 0;<br />
+		}
+	</code>
 	</li>
 	</ul>
 
