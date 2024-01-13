@@ -114,7 +114,7 @@
 	<code>//En python<br /><br />
 		n=True
 		<br /><br />
-		//En c il n'y a pas de valeur "bool", soit c'est 0 (faux), soit c'est un nombre quelquonque (vraie)<br /><br />
+		//En c il n'y a pas de valeur "bool", soit c'est 0 (faux), soit c'est un nombre quelquonque (vrai)<br /><br />
 		int main()<br />{<br />
 		int n = 1;<br />
 		return 0;<br />
@@ -217,7 +217,139 @@
 	</code>
 	</li>
 	</ul>
+	<h3>1.4.1.4 Les opérateurs</h3>
+	<p align="justify">Les opérateurs sont très important pour utiliser les variables. Ils se divisent en deux catégories : les opérateurs arithmétiques et les opérateurs logiques dits booléans</p>
+	<h3>1.4.1.4.1 Les opérateurs arithmétiques</h3>
+	<ul>
+	<li>
+	<h4>=</h4>
+	<p align="justify">L'opérateur = malgré son utilisation en arithmétiques pour montrer une égalité, le symbole égale permet de mettre une valeur dans une variable.</p>
+	</li>
+	<li>
+	<h4>+,-</h4>
+	<p align="justify">L'opérateur + permet d'additionner deux nombres. L'opérateur - permet de soustraire</p>
+	</li>
+	<li>
+	<h4>*,/</h4>
+	<p align="justify">L'opérateur * permet de multiplier et / de diviser</p>
+	</li>
+	</ul>
+	<h3>1.4.1.4.2 Les opérateurs booléans</h3>
+	<p align="justify">Les opérateurs booléans sont un obligatoire en programmation, grâce à eux vous pouvez faire des systèmes de cryptages, comparer des informations ou refaire un circuit d'ordinateur(puisqu'un ordinateur fonctionne en binaire et donc compare juste deux conditions : courant ou pas).</p>
 
+	<ul>
+	<li>
+	<h4>L'opérateur ET</h4>
+	<p align="justify">L'opérateur ET est plutôt explicite, si les deux booléans sont vrais, la condition renvoie vrai sinon faux</p>
+	<table>
+		<tr>
+			<td>&emsp;A&emsp;</td>
+			<td>&emsp;B&emsp;</td>
+			<td>Résultat</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+	</table>
+	</li>
+	<li>
+	<h4>L'opérateur NON</h4>
+	<p align="justify">NON c'est non. Plus sérieusement, NON permet d'inverser une valeur</p>
+	<table>
+		<tr>
+			<td>&emsp;A&emsp;</td>
+			<td>Résultat</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+		</tr>
+	</table>
+	</li>
+	<li>
+	<h4>L'opérateur OU</h4>
+	<p align="justify">L'opérateur OU, renvoie si une ou deux variables sont vrais.</p>
+	<table>
+		<tr>
+			<td>&emsp;A&emsp;</td>
+			<td>&emsp;B&emsp;</td>
+			<td>Résultat</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+	</table>
+	</li>
+	<li>
+	<h4>L'opérateur OU exclusif</h4>
+	<p align="justify">L'opérateur OU exclusif réagit comme ou sauf que si les deux valeurs sont vrais, la condition est fausse</p>
+	<table>
+		<tr>
+			<td>&emsp;A&emsp;</td>
+			<td>&emsp;B&emsp;</td>
+			<td>Résultat</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+	</table>
+	</li>
+	</ul>
 	<font size="4" color="black">
 		<p align="justify"></p>
 	</font>
