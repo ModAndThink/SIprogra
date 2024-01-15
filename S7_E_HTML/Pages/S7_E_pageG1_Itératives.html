@@ -2,6 +2,7 @@
 <head>
 	<title>SI-S7-TP</title>
 	<link rel="stylesheet" href="../SI_Style.css" />
+	<link rel="stylesheet" href="../minimal-table.css" />
 </head>
 
 <body>
@@ -25,5 +26,43 @@
 		
 	</ul>
 </div>
+
+<div id="page">
+	<h2>Sommaire</h2>
+	<font size="4" color="black">
+		<ol>
+			<li><h3>Algorithme, programme;</h3></li>
+			<li><a href="../Pages/S7_E_pageG1_Variable.html">1.4.1 Variable;</a></li>
+			<li><a href="../Pages/S7_E_pageG1_Fonction.html">1.4.2 Fonction;</a></li>
+			<li><a href="../Pages/S7_E_pageG1_Séquentielles.html">1.4.3 structures s�quentielles;</a></li>
+			<li><a href="../Pages/S7_E_pageG1_Itératives.html">1.4.4 structures ir�tatives;</a></li>
+			<li><a href="../Pages/S7_E_pageG1_Répétitives.html">1.4.5 structures r�p�tives;</a></li>
+			<li><a href="../Pages/S7_E_pageG1_Conditionnelles.html">1.4.6 structures conditionnelles;</a></li>
+			<li><a href="../Pages/S7_E_pageG1_Langage.html">Langage informatic;</a></li>
+			<a href="#haut">Retour en haut de la page</a>
+		</ol>
+	</font><section id="A1">
+	<h3>1.4.4 Structures itératives</h3>
+	<p align="justify">Les structures itératives correspondent à une boucle dont vous connaissez le nombre d'itération. Un exemple évident serait une suite mathémmatique :
+		<br /><br />
+		<i>u(0) = 0<br />u(n+1) = n<sup>6</sup>+u(n)*3</i><br />
+		<br />
+		Ici, on connait le nombre d'itération <i>n</i> et aussi le résultat précédent <i>u(n)</i>. La suite à une valeur initiale <i>u(0) = 0</i>. Les structures itératives permettent donc
+		de représenter des suites mais aussi de limiter une boucle à un certain nombre d'itérations, par exemple pour une fonction d'encadrement qui sans ça pourrait fonctionner 
+		indéfiniment.
+
+		<table>
+			<tr><td>Language naturel</td></tr>
+			<tr><td><code>
+				//Représentation de la suite u(10)<br />
+				u&lt;-0<br /><br />
+				pour i&lt;-1; tant que i&lt;10; i&lt;-i+1 <br />
+				&emsp;u &lt;- (i-1)<sup>6</sup>+u*3
+			</code></td></tr>
+		</table>
+	</p>
+	</section>
+</div>
+
 </body>
 </html>
